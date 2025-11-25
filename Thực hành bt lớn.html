@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Demon - Hương vị cuối đời</title>
+  <style>
+    /* ==== RESET CSS ==== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f3ef;
+      color: #333;
+    }
+
+    /* ==== HEADER ==== */
+    header {
+      background-color: #4b2e05;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    /* ==== BANNER ==== */
+    .banner {
+      background: url('seamless-coffee-pattern-with-beans-vector-28283526.avif');
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(0, 0, 0);
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-shadow: #000;
+    }
+
+    /* ==== NAVIGATION ==== */
+    nav {
+      background-color: #7b4a12;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: block;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #a06b28;
+    }
+
+    /* ==== MAIN CONTENT ==== */
+    main {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .menu, .order-form {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 45%;
+      margin: 10px;
+    }
+
+    .menu h2, .order-form h2 {
+      color: #4b2e05;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #d6a676;
+      padding-bottom: 5px;
+    }
+
+    .menu ul {
+      list-style: none;
+    }
+
+    .menu li {
+      margin: 8px 0;
+    }
+
+    /* ==== ORDER FORM ==== */
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      margin-top: 10px;
+      background-color: #4b2e05;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: #7b4a12;
+    }
+
+    /* ==== FOOTER ==== */
+    footer {
+      background-color: #4b2e05;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Coffee Demon</h1>
+    <p>Thưởng thức hương vị cuối đời</p>
+  </header>
+
+  <!-- BANNER -->
+  <div class="banner">
+    <span>Chào mừng đến với Coffee Demon</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="">Trang chủ</a>
+    <a href="">Menu</a>
+    <a href="">Đặt hàng</a>
+    <a href="">Liên hệ</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="menu">
+      <h2>Menu nổi bật</h2>
+      <ul>
+        <li>Cà phê sữa đá – 25.000đ</li>
+        <li>Espresso – 30.000đ</li>
+        <li>Capuccino – 35.000đ</li>
+      </ul>
+    </section>
+
+    <section class="order-form">
+      <h2>Biểu mẫu đặt hàng</h2>
+      <form>
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name">
+
+        <label for="drink">Chọn món:</label>
+        <select id="drink">
+          <option>Cà phê sữa đá</option>
+          <option>Espresso</option>
+          <option>Capuccino</option>
+        </select>
+
+        <label for="note">Ghi chú thêm:</label>
+        <textarea id="note" rows="3"></textarea>
+
+        <button type="submit">Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Coffee Demon | Thiết kế Nguyễn Duy Anh</p>
+  </footer>
+
+</body>
+</html>
